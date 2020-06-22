@@ -1,0 +1,28 @@
+\section{Key Takeaways}
+
+A \emph{poset} is a set with a notion of ``less than or equal''.
+
+A \emph{lattice} is a poset which comes equipped with:
+\begin{itemize}
+\item a binary operator which computes the least upper bound of any two elements called the \emph{join} $\sqcup$,
+\item a binary operator which computes the greatest lower bound of any two elements called the \emph{meet} $\sqcap$.
+\end{itemize}
+
+If only one of the operators are defined, then the poset is a \emph{semi-lattice}.
+
+A \emph{complete lattice} is a lattice where the meet and join operators can be applied to arbitrary subsets of the lattice.
+
+A \emph{bounded lattice} is a lattice comes equipped with:
+\begin{itemize}
+\item a top element $\top$, with $x \sqle{} \top$ for all $x$,
+\item a bottom element $\bot$, with $\bot \sqle{} x$ for all $x$.
+\end{itemize}
+
+A \emph{chain} is a totally ordered subset of the lattice.
+
+The \emph{height} of the lattice is the size of the longest chain.
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../paper"
+%%% End:

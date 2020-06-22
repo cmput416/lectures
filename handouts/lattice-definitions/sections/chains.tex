@@ -1,0 +1,24 @@
+\section{Chains and Heights}
+\begin{definition}[Chain]
+  If $(U, \sqle{})$ is a lattice, then $A \subseteq U$ is a \emph{chain} if:
+  \begin{itemize}
+  \item for all $x,y \in A$, either $x \sqle y$ or $y \sqle x$.
+  \end{itemize}
+\end{definition}
+
+\begin{definition}[Height]
+  If $(U, \sqle{})$ is a lattice, then the \emph{lattice height} is the carnality of the \textbf{longest} chain in the lattice.
+\end{definition}
+
+\begin{definition}[Ascending Chain Condition]
+  A lattice (or more generally, a poset) satisfies the ascending chain condition
+  if for any sequence $d_0 \sqle d_1 \sqle d_2 \sqle \cdots$, there exists an
+  $m$ such that for all $n \geq m$ $d_n = d_m$.
+\end{definition}
+
+\emph{Question:} Can you have non-ascending chains in a finite lattice?
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../paper"
+%%% End:

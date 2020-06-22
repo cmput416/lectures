@@ -1,0 +1,18 @@
+\section{Lattice Hacks!!!}
+Lattice operations have some interesting properties:
+\begin{itemize}
+\item $x \sqle{} y$ if and only if $x \sqcup y = y$,
+\item If $a \sqle{} b$ and $c \sqle{} d$ then $a \sqcup c \sqle{} b \sqcup d$,
+\item $x \sqcup x = x$.
+\end{itemize}
+
+You can use the above properties to show that the following are equivalent.
+\begin{itemize}
+\item $f$ is monotone, i.e. $\forall x,y, x \sqle y \implies f(x) \sqle f(y)$, and
+\item for all $x,y$, $f(x) \sqcup f(y) \sqle{} f(x \sqcup y)$.
+\end{itemize}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../paper"
+%%% End:

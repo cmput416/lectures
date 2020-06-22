@@ -1,0 +1,31 @@
+\section{Partial Orders}
+\begin{definition}[Partially Ordered Set, poset]
+  If $U$ is a set and $\sqle$ is a binary relation on $U$, then the system
+  $(U, \sqle)$ is a \emph{poset} if
+  \begin{itemize}
+  \item for every $x \in U$, $x \sqle x$ ($\sqle$ is reflexive),
+  \item for every $x,y,z \in U$, if $x \sqle y$ and $y \sqle z$, then $x \sqle z$ ($\sqle$ is transitive), and
+  \item for every $x,y \in U$, if $x \sqle y$ and $y \sqle x$, then $x == y$ ($\sqle$ is anti-symmetric)
+  \end{itemize}
+\end{definition}
+
+\begin{example}[Posets]
+  Some examples of posets include the following.
+  \begin{itemize}
+  \item $\leq$ on natural numbers.
+  \item $\subseteq$ on sets.
+  \end{itemize}
+\end{example}
+
+\begin{example}[Not posets]
+  The following are not posets.
+  \begin{itemize}
+  \item $<$ on natural numbers - because $<$ is not reflexive. E.g. $1\nless{}1$.
+  \item $\subset$ (proper subset) on sets - again not reflexive.
+  \end{itemize}
+\end{example}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../paper"
+%%% End:

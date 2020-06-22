@@ -1,0 +1,62 @@
+\section{Lattices}
+\begin{definition}
+  If $(U, \sqle{})$ is a poset where $U \neq \emptyset$, then $(U, \sqle{})$ is
+  a \emph{lattice} if for all $x,y\in U$:
+  \begin{itemize}
+  \item there exists a $z$ such that $z = x \sqcup y$ (Least Upper Bound)
+  \item there exists a $z$ such that $z = x \sqcap y$ (Greatest Lower Bound)
+  \end{itemize}
+\end{definition}
+
+\begin{definition}
+  If $(U, \sqle{})$ is a poset where $U \neq \emptyset$, then $(U, \sqle{})$ is
+  a \emph{complete lattice} if for all $A \subseteq U$:
+  \begin{itemize}
+  \item there exists a $z$ such that $z = \sqcup A$ (Least Upper Bound)
+  \item there exists a $z$ such that $z = \sqcap A$ (Greatest Lower Bound)
+  \end{itemize}
+\end{definition}
+
+If only one of the above properties are satisfied, then the poset is called a semi-lattice.
+
+\begin{definition}
+  If $(U, \sqle{})$ is a poset where $U \neq \emptyset$, then $(U, \sqle{})$ is
+  a \emph{join semi-lattice} if for all $x,y\in U$:
+  \begin{itemize}
+  \item there exists a $z$ such that $z = x \sqcup y$ (Least Upper Bound)
+  \end{itemize}
+\end{definition}
+
+\begin{definition}
+  If $(U, \sqle{})$ is a poset where $U \neq \emptyset$, then $(U, \sqle{})$ is
+  a \emph{meet semi-lattice} if for all $x,y\in U$:
+  \begin{itemize}
+  \item there exists a $z$ such that $z = x \sqcap y$ (Greatest Lower Bound)
+  \end{itemize}
+\end{definition}
+
+\begin{definition}
+  If $(U, \sqle{})$ is a lattice, then $(U, \sqle{})$ is bounded if:
+  \begin{itemize}
+  \item there exists a $z$ such that $z = \sqcup U$ (called top, denoted $\top$)
+  \item there exists a $z$ such that $z = \sqcap U$ (called bottom, denoted $\bot$)
+  \end{itemize}
+\end{definition}
+
+\emph{Question:} Is a complete lattice bounded?
+
+\emph{Question:} Is a finite lattice complete?
+
+\subsection{Further Questions}
+Let $U = \set{F \st F \subseteq \mathbb{N}, F \text{ finite}} \cup \set{\mathbb{N} \setminus F \st F \subseteq \mathbb{N}, F \text{ finite}}$.
+
+\emph{Question 1:} Is $(U, \subseteq)$ a lattice?
+
+\emph{Question 2:} Is it bounded?
+
+\emph{Question 3:} Is it complete?
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../paper"
+%%% End:

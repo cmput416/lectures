@@ -1,0 +1,41 @@
+\section{Hasse Diagrams}
+Finite partial orders can be represented using a mathematical diagram called a \emph{Hasse diagram}.
+
+Vertices (often labelled) represent elements of $U$, and for every $x\sqle{}y$
+such that there is no $z$ such that $x\sqle{}z\sqle{}y$, there is a line which
+goes upward from $x$ to $y$.
+
+We assume transitivity, i.e. if $x\sqle{}y$ and $y\sqle{}z$ according to the diagram, then we can deduce that $x\sqle{}z$.
+
+We also assume reflexivity, i.e. $x \sqle{} x$ for every $x$ in the diagram.
+
+\begin{center}
+  \begin{tikzcd}[tips=false]
+    A \ar{d} &&&& B \\
+    C \ar{dr} && D \ar{dl} \ar{dr} \\
+    & E && F
+  \end{tikzcd}
+\end{center}
+
+In the above diagram, $E \sqle{} A$ because $E \sqle{} C$ and $C \sqle{} A$.
+
+We have both $E \sqle{} D$ and $F \sqle{} F$.
+
+There is no $x$ such that $x \sqlt{} B$ or $B \sqlt{} x$, only that $B \sqle{} B$.
+
+\emph{Question:} Can you find all $x,y$ such that $x \sqle y$?
+
+% Sometimes we also draw Hasse diagrams for infinite posets, hiding parts of the diagram with ellipsis. For example, the following is a Hasse diagram for the natural numbers.
+% \begin{center}
+%   \begin{tikzcd}[tips=false]
+%     \vdots \ar{d} \\
+%     2 \ar{d} \\
+%     1 \ar{d} \\
+%     0
+%   \end{tikzcd}
+% \end{center}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../paper"
+%%% End:

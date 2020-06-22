@@ -1,0 +1,29 @@
+\section{Upper and Lower Bounds}
+\begin{definition}[Upper Bound]
+  If $(U, \sqle{})$ is a poset, $A \subseteq U$, and $z \in U$, then $z$ is an \emph{upper bound} of $x$ and $y$ if $x \sqle{} z$ and $y \sqle{} z$.
+\end{definition}
+
+\begin{definition}[Least Upper Bound]
+  If $(U, \sqle{})$ is a poset and $A \subseteq U$, then $z$ is the \emph{least upper bound} of $A$ if
+  \begin{itemize}
+  \item for every $x \in A$, $x \sqle{} z$, and
+  \item for every $y \in U$ such that $\forall x \in A, x \sqle{} y$, we have that $z \sqle{} y$.
+  \end{itemize}
+\end{definition}
+
+A least upper bound, as the name suggests is an upper bound and is less than all other upper bounds.
+
+\begin{definition}[Greatest Lower Bound]
+  If $(U, \sqle{})$ is a poset and $A \subseteq U$, then $z$ is the \emph{greatest upper bound} of $A$ if
+  \begin{itemize}
+  \item for every $x \in A$, $z \sqle{} x$, and
+  \item for every $y \in U$ such that $\forall x \in A, y \sqle{} x$, we have that $z \sqle{} y$.
+  \end{itemize}
+\end{definition}
+
+\emph{Question:} Can you have two least upper bounds?
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "../paper"
+%%% End:
